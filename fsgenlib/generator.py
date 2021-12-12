@@ -84,7 +84,7 @@ def initialize() -> FSGenerator:
         UserInteraction.print_warn("Pool will be corrected to {}".format(pool))
 
     for i in range(parties_num):
-        name = UserInteraction.ask("Partie #{}'s name".format(i + 1), lambda x: True if x and x not in parties_names else False, "Partie's name is empty or is duplicate")
+        name = UserInteraction.ask("Party #{}'s name".format(i + 1), lambda x: True if x and x not in parties_names else False, "Partie's name is empty or is duplicate")
         parties_names.append(name)
         _r = input("Partie #{}'s coefficient (default: 1): ".format(i+1))
         if not _r or float(_r) <= 0.0:

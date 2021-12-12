@@ -1,0 +1,30 @@
+1. Get the input from the user [IMPLEMENTED]:
+    - Total pool of people
+    - Number of parties in a chart
+    - Check if total pool is divisible by the number of parties
+        - If it isn't, add a corresponding amount of people so that it will be divisible. Print the correction message after
+    - For each party:
+        - Name
+        - Coefficient
+        - Color (will be assigned) (optional) [ABANDONED]
+        - Check that there are no dublicate parties
+
+2. Sort the data [IMPLEMENTED]:
+    - Get the data into its own DataUnit dataclasses
+    - Initialize the Generator class with a list of DataUnit classes
+
+3. Generate the data [IMPLEMENTED]:
+    - Divide the initial pool into equal portions
+    - Sort the parties by the decreasing order of a coefficient [NOT NEEDED, ABANDONED]
+    - Repeat for each party:
+        - Multiply the portion by the partie's coefficient
+        - Store the result in the Partie's instance
+    - Add all computed numbers and find the difference between it and the initial pool
+    - Divide the difference by the parties number and subtract each portion from partie's people count
+
+4. Dump the data into a .csv file [IMPLEMENTED]
+
+Separate features:
+    - colored output [DONE]
+
+
